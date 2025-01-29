@@ -12,7 +12,7 @@
     - input
       - works every time the user types in an input field.
     
-    - foucs & blur
+    - focus & blur
       - Highlighting an input field when a user starts typing.
 */
 
@@ -47,7 +47,7 @@ liveInput.addEventListener("input", (e) => {
   output.innerText = e.currentTarget.value;
 });
 
-//* foucs & blur
+//* focus & blur
 email.addEventListener("focus", (e) => {
   e.currentTarget.style.backgroundColor = "#e0f7fa";
 });
