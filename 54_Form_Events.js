@@ -1,7 +1,7 @@
 /*
   Form Events
     - submit
-      - Explain when submit there are a refresh because it goes to the same page
+      - triggered when the form is submitted.
 
     - reset
       - Display a message or log when the form is cleared.
@@ -28,19 +28,18 @@ const email = document.getElementById("email");
 //* submit
 formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
-  // e.target;
   // console.log("Submitted");
-  // console.log(inputSubmit.value);
+  console.log(inputSubmit.value);
 });
 
 //* reset
 formReset.addEventListener("reset", () => {
-  alert("Form has been reset!");
+  alert("Form has been cleared!");
 });
 
 //* change
 country.addEventListener("change", (e) => {
-  console.log(`You Selected ${e.currentTarget.value}`);
+  console.log(`You selected ${e.currentTarget.value}`);
 });
 
 //* input
